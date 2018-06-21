@@ -77,9 +77,8 @@ def main():
         favs += tweet.favorite_count
         tweet_tokens = nltk.word_tokenize(tweet.text)
         for w in tweet_tokens:
-            if (w[0].isalpha()) and (w not in stopWords):
+            if (w[0].isalpha()) and (w not in stopWords) and (len(w)>1):
                 filteredTokens.append(w)
-
 
 
     verbs = []

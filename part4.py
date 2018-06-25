@@ -30,4 +30,4 @@ data = [trace]
 layout = go.Layout(title='Nouns data', width=800, height=640)
 fig = go.Figure(data=data, layout=layout)
 
-py.image.save_as(fig, filename='a-simple-plot.png')
+py.image.save_as(fig, filename='part4_viz_image.png')
